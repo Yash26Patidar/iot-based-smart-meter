@@ -15,8 +15,8 @@ BlynkTimer timer;
 
 char auth[] = "ZP59VQPRhjXxN7AgTv5bE2HAp-tYVLx7";
 
-char ssid[] = "Yashpatidar";
-char pass[] = "yash2002";
+char ssid[] = "Yashpatidar"; //network name
+char pass[] = "yash2002"; //network password
 
 float kWh = 0;
 unsigned long lastmillis = millis();
@@ -97,7 +97,7 @@ void loop()
 }
 
 #define BLYNK_PRINT Serial
-#include "EmonLib.h"   //https://github.com/openenergymonitor/EmonLib
+#include "EmonLib.h"  
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <BlynkSimpleEsp32.h>
